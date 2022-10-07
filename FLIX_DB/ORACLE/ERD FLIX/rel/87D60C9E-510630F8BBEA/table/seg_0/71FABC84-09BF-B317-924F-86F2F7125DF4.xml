@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="71FABC84-09BF-B317-924F-86F2F7125DF4" name="MEDIA">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-07 17:19:43 UTC</createdTime>
+<ownerDesignName>ERD FLIX</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="media_id" id="C3C8E3D9-A59C-6322-8BC2-92E6DA9F04B3">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-07 17:20:24 UTC</createdTime>
+<ownerDesignName>ERD FLIX</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="format" id="A4D10B6A-EF56-8F0F-2EE6-FF3F25505F22">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-07 17:20:24 UTC</createdTime>
+<ownerDesignName>ERD FLIX</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MOVIES_title_id" id="4C23C0F9-1D35-FDC5-2BF6-E0CF29AC3BD9">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-07 17:25:17 UTC</createdTime>
+<ownerDesignName>ERD FLIX</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7B858A0F-A5B7-B5E3-55AC-E05B1005C9D1" referredColumn="534B11C2-37A7-FE9D-24DC-8FD18E6D7D8D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="37441A3C-EF94-220B-D44C-461FFE5C155B" name="MEDIA_PK">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-07 17:20:24 UTC</createdTime>
+<ownerDesignName>ERD FLIX</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C3C8E3D9-A59C-6322-8BC2-92E6DA9F04B3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5438B4EB-F1EF-E8CC-6C27-C48E0D4E433F" name="MEDIA_MOVIES_FK">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-07 17:25:17 UTC</createdTime>
+<ownerDesignName>ERD FLIX</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C23C0F9-1D35-FDC5-2BF6-E0CF29AC3BD9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

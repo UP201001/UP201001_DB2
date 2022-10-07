@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E408D48C-3892-0F27-6C02-F65395C7DDD3" name="MOVIES">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-07 17:20:33 UTC</createdTime>
+<ownerDesignName>ERD FLIX</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="title_id" id="534B11C2-37A7-FE9D-24DC-8FD18E6D7D8D">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-07 17:20:59 UTC</createdTime>
+<ownerDesignName>ERD FLIX</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="title" id="82431DA4-4621-E13E-0677-54ADBCA43D6A">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-07 17:21:53 UTC</createdTime>
+<ownerDesignName>ERD FLIX</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="1FD40E3E-8B9B-D5A3-6745-81B557B26FEC">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-07 17:21:53 UTC</createdTime>
+<ownerDesignName>ERD FLIX</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rating" id="334639A6-A080-5D79-CA68-4AAE5B3F7A0E">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-07 17:21:53 UTC</createdTime>
+<ownerDesignName>ERD FLIX</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="category" id="62E46F57-0304-94C9-DEA4-69435DB4C1E7">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-07 17:21:53 UTC</createdTime>
+<ownerDesignName>ERD FLIX</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="release_date" id="01E9E548-31A4-2A83-F459-79304202BB33">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-07 17:21:53 UTC</createdTime>
+<ownerDesignName>ERD FLIX</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9535AD89-FD2C-C9C0-8B9A-3A148FB251CE" name="MOVIES_PK">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-07 17:20:59 UTC</createdTime>
+<ownerDesignName>ERD FLIX</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="534B11C2-37A7-FE9D-24DC-8FD18E6D7D8D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

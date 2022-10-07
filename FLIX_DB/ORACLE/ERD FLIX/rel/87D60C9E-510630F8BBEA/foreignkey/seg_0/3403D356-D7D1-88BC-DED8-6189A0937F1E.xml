@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3403D356-D7D1-88BC-DED8-6189A0937F1E" containerWithKeyObject="F4532295-CC2B-3845-02E9-1C3C9CEA8479" localFKIndex="C7AC76CD-C745-9656-487F-07FB641F6A2F" name="STAR BILLINGS_ACTORS_FK">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-07 17:25:48 UTC</createdTime>
+<ownerDesignName>ERD FLIX</ownerDesignName>
+<referredTableLongName>ACTORS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>16DA9DB2-4EE4-6016-CA7A-1DC222FB2AF1</referredTableID>
+<keyObject>FA243F1E-B57D-5699-FD60-261FBA7C553A</keyObject>
+<referredKeyID>FA243F1E-B57D-5699-FD60-261FBA7C553A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>actor_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

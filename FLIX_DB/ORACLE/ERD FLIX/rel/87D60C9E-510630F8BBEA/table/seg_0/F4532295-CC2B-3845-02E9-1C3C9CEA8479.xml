@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F4532295-CC2B-3845-02E9-1C3C9CEA8479" name="STAR BILLINGS">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-07 17:22:05 UTC</createdTime>
+<ownerDesignName>ERD FLIX</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="comment" id="63783D20-8D91-60D5-611C-FECA7C527AC8">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-07 17:22:29 UTC</createdTime>
+<ownerDesignName>ERD FLIX</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MOVIES_title_id" id="28396FBE-235E-E316-DD4C-977E3E65A210">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-07 17:25:31 UTC</createdTime>
+<ownerDesignName>ERD FLIX</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="354E4745-57B5-287E-DD5C-1C0DC8624E6E" referredColumn="534B11C2-37A7-FE9D-24DC-8FD18E6D7D8D"/>
+</associations>
+</Column>
+<Column name="ACTORS_actor_id" id="78FD2802-1A02-6C4F-BC3B-748C2B07D2D5">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-07 17:25:48 UTC</createdTime>
+<ownerDesignName>ERD FLIX</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3403D356-D7D1-88BC-DED8-6189A0937F1E" referredColumn="B3872C56-F7A8-4DB5-AC2B-C8C6B5894034"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="749779B8-74E1-7446-4DD4-6241049333BF" name="STAR BILLINGS_MOVIES_FK">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-07 17:25:31 UTC</createdTime>
+<ownerDesignName>ERD FLIX</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="28396FBE-235E-E316-DD4C-977E3E65A210"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C7AC76CD-C745-9656-487F-07FB641F6A2F" name="STAR BILLINGS_ACTORS_FK">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-07 17:25:48 UTC</createdTime>
+<ownerDesignName>ERD FLIX</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="78FD2802-1A02-6C4F-BC3B-748C2B07D2D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
