@@ -1,7 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="D99B5334-E9B3-CD95-3B68-1FFE373F0785" mainViewID="698880AF-27C5-C943-D4FE-EB3F6D064212">
-<createdBy>leolo</createdBy>
-<createdTime>2022-10-07 17:12:25 UTC</createdTime>
-<ownerDesignName>ERD FLIX</ownerDesignName>
-<shouldBeOpen>false</shouldBeOpen>
-</LogicalDesign>

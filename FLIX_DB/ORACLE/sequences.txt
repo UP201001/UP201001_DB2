@@ -1,0 +1,23 @@
+CREATE SEQUENCE customers_id_seq
+MINVALUE 101
+start with 101
+increment by 1
+cache 50;
+
+CREATE SEQUENCE title_id_seq
+MINVALUE 1
+start with 1
+increment by 1
+cache 50;
+
+CREATE SEQUENCE media_id_seq
+MINVALUE 92
+start with 92
+increment by 1
+cache 50;
+
+CREATE SEQUENCE actors_id_seq
+MINVALUE 1001
+start with 1001
+increment by 1
+cache 50;

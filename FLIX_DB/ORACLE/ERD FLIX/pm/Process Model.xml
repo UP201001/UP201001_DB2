@@ -1,7 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="A42D4A22-589E-0743-DD05-8A4296D00226">
-<createdBy>leolo</createdBy>
-<createdTime>2022-10-07 17:12:25 UTC</createdTime>
-<ownerDesignName>ERD FLIX</ownerDesignName>
-<shouldBeOpen>false</shouldBeOpen>
-</ProcessModel>
