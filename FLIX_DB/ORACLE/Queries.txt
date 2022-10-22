@@ -1,0 +1,6 @@
+--Run a query that shows the stage name and current age of the actors (use table ACTORS)
+--Run a query that shows wich movie is the most requested(rented) by the customers
+--Run a query that shows wich movie is the least requested(rented) by the customers
+--Run a query that show a rent note (full name of the customer, name of the movie(s), format of the movie, day of rent, return date *if it is null add 45 days to the rental date*)
+--Run a query that shows the best customer(the one who had rented more movies)
+--Run a query that shows the name of the movie with the most stock (it doesn't matter if the movie is currently rented)
