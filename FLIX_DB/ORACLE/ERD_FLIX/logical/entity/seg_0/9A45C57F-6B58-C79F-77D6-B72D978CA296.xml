@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9A45C57F-6B58-C79F-77D6-B72D978CA296" name="STAR_BILLINGS">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 01:46:39 UTC</createdTime>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<engineerTo>
+<item key="B560DC61-34C4-8D83-BC2D-2DBC7FD2B500" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="comments" id="96D239CF-8370-3EEC-57AB-4EECB10B133D">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 01:46:50 UTC</createdTime>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<engineerTo>
+<item key="B560DC61-34C4-8D83-BC2D-2DBC7FD2B500" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="title_id" id="941F1DF6-FA41-CE9D-CF90-79F4101FBB51">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 01:52:27 UTC</createdTime>
+<generatorID>D5F7C43A-F4FD-6807-3EF0-2A27A7CD6262</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<engineerTo>
+<item key="B560DC61-34C4-8D83-BC2D-2DBC7FD2B500" value="true"/>
+</engineerTo>
+<referedAttribute>8263D51E-EFFD-F9E3-2261-F4243D0AC22A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="actor_id" id="90FDC29D-432F-EC9B-6513-736FBD2A8FFA">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 01:52:47 UTC</createdTime>
+<generatorID>15168307-1DA4-59B5-183A-F20012669EEA</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<engineerTo>
+<item key="B560DC61-34C4-8D83-BC2D-2DBC7FD2B500" value="true"/>
+</engineerTo>
+<referedAttribute>24ACF125-2E69-1397-CB73-EE8E9F3EDE6F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6D42955D-8D10-E621-329A-C8A0DB6394A2" name="STAR_BILLINGS PK">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 01:52:27 UTC</createdTime>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<engineerTo>
+<item key="B560DC61-34C4-8D83-BC2D-2DBC7FD2B500" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>941F1DF6-FA41-CE9D-CF90-79F4101FBB51</attributeRef>
+<attributeRef>90FDC29D-432F-EC9B-6513-736FBD2A8FFA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

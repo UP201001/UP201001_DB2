@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="90401CBD-7A54-AB10-3059-FD6657B9FCE8" name="RENTAL_HISTORY">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>B41744E4-7251-CDD6-1EA6-84108A57E20D</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MEDIA_media_id" id="007FECD5-A4AF-5374-6A89-00C47DF42491">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>0055A7FB-527A-5993-60EB-A967984AD170</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C1638D8F-1C2F-EA79-E887-D8030135A225" referredColumn="0D2ED553-1D78-BFE9-94A1-62B48E67383D"/>
+</associations>
+</Column>
+<Column name="rental_date" id="625F281A-89C0-4267-5AEA-AA296EB21273">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>31DF06CD-7A95-A572-7EDC-E7FDE5D3AEC4</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUSTOMERS_customer_id" id="84A0F441-1A6C-89C6-50DF-1F14FB92BECA">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>CE1462C5-205A-130A-4590-2F6F86C7BF15</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B9E8CAED-DF45-560D-6981-29E6FA2620B4" referredColumn="7A016D2A-4856-D7C0-8311-54E193D60408"/>
+</associations>
+</Column>
+<Column name="return_date" id="D5FA87C6-A78A-246C-C05B-5FF96EBECDB8">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>8E637510-7FEA-1301-C768-6D1B032021B3</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C04D3A30-7BA3-D97A-59A9-1BF96638A74B" name="RENTAL_HISTORY_PK">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>B00D1C13-0922-CA99-4D6C-1D18CDBCC95C</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="007FECD5-A4AF-5374-6A89-00C47DF42491"/>
+<colUsage columnID="625F281A-89C0-4267-5AEA-AA296EB21273"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5B7B2560-9E1F-02C3-F8F6-F5340498946A" name="RENT_HIST_PK">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 03:51:38 UTC</createdTime>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="007FECD5-A4AF-5374-6A89-00C47DF42491"/>
+<colUsage columnID="625F281A-89C0-4267-5AEA-AA296EB21273"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2FFF6F67-6703-3D13-E5F7-FF22A05CC69D" name="RENTAL_HISTORY_CUSTOMERS_FK">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>2FFBACA0-0F94-EC61-82C0-B7B94111C20A</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="84A0F441-1A6C-89C6-50DF-1F14FB92BECA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F075BF58-0EE8-7EEF-D1D4-FB8BA3C8D2C5" name="RENTAL_HISTORY_MEDIA_FK">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>22D902D8-98E5-4697-AB23-6AC803B104A6</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="007FECD5-A4AF-5374-6A89-00C47DF42491"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

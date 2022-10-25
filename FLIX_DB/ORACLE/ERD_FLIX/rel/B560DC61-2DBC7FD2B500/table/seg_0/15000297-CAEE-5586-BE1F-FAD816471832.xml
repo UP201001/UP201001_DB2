@@ -1,0 +1,155 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="15000297-CAEE-5586-BE1F-FAD816471832" name="CUSTOMERS">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>8024A07B-C964-6165-8AB8-2596688EEE38</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="customer_id" id="7A016D2A-4856-D7C0-8311-54E193D60408">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>10D7B652-71BD-91B2-F7C7-9A592C9CF0A4</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="last_name" id="2FCD355D-0D09-0E5A-3D56-741CE82B66CB">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>B66A2670-0835-65ED-C6B5-1B6CCFB3EFC7</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="first_name" id="F4C089B2-9389-7665-324E-C6209E00B444">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>93E0BD77-755E-3CB4-0D45-EDFA4E7250D8</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="home_phone" id="03233DCD-B2D9-17D8-219C-38863EAD957F">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>EAB47CCB-1AB3-6D1F-886E-EFEC4D3E344A</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="address" id="7FC8B599-E5EE-6AFF-F6DA-B259EF61E724">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>FC7804E1-1B05-79BC-BB52-5E2797FF90C3</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="city" id="D50ECA5C-6D7C-28F0-1803-824E7E727A55">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>63EAAA6C-DC23-9C73-4630-E4155636DB33</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="state" id="446FD459-C12E-4DA8-4D7F-80887B8C427A">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>BFF99EC1-A656-BB27-31F0-1982E6187A68</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="1937ADA8-E31C-BB8C-EBC2-90411EFF455D">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>D46EB571-D1A6-FB35-4489-6D8CEA31BCCB</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cell_phone" id="CAC42C52-F47A-5B86-D1A6-1BEA37DDC4E1">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>EB1D2D4C-5161-6A88-A7EA-71A38DFADF90</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4CF7FF77-9EBC-BEB5-43B0-D31138154E00" name="CUSTOMERS_PK">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>B413FAEA-E3C7-DD28-1AAE-49F5D098EFB5</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7A016D2A-4856-D7C0-8311-54E193D60408"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7CA21203-43DD-D566-C13F-40FF1ADC4A55" name="CUS__ID_PK">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:05:48 UTC</createdTime>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7A016D2A-4856-D7C0-8311-54E193D60408" sortOrder="DESC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="04E3ACF2-1637-D4AF-9663-A5D97F8D1ADC" name="CUSTOMERS_LAST_NAME_I">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 03:49:35 UTC</createdTime>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2FCD355D-0D09-0E5A-3D56-741CE82B66CB" sortOrder="DESC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

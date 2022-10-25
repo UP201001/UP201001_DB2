@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2F2B3161-F1DE-DB81-A2DF-086514361AB5" containerWithKeyObject="6EDC8C50-EC65-0280-3615-8C11E517F86A" localFKIndex="DA72D48A-1B3B-4C6A-1B96-98FA377D3801" name="STAR_BILLINGS_MOVIES_FK">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>D5F7C43A-F4FD-6807-3EF0-2A27A7CD6262</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<referredTableLongName>MOVIES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B2116E1D-E914-217A-7B65-12DF4D422CC9</referredTableID>
+<keyObject>7FE0F39C-F849-2FD7-29EC-F514DD5D7A2B</keyObject>
+<referredKeyID>7FE0F39C-F849-2FD7-29EC-F514DD5D7A2B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>title_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

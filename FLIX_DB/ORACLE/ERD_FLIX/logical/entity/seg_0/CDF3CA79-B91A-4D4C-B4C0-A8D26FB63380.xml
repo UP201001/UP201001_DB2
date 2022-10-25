@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CDF3CA79-B91A-4D4C-B4C0-A8D26FB63380" name="ACTORS">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 01:44:41 UTC</createdTime>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<engineerTo>
+<item key="B560DC61-34C4-8D83-BC2D-2DBC7FD2B500" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="actor_id" id="24ACF125-2E69-1397-CB73-EE8E9F3EDE6F">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 01:44:49 UTC</createdTime>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<engineerTo>
+<item key="B560DC61-34C4-8D83-BC2D-2DBC7FD2B500" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="stage_name" id="90C2CAAE-D2F6-8C12-BEFA-326D45C272F6">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 01:45:03 UTC</createdTime>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<engineerTo>
+<item key="B560DC61-34C4-8D83-BC2D-2DBC7FD2B500" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="first_name" id="57BC4230-10D0-D603-BAA5-B844C1748456">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 01:45:35 UTC</createdTime>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<engineerTo>
+<item key="B560DC61-34C4-8D83-BC2D-2DBC7FD2B500" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="last_name" id="67B900D3-BD6E-4642-D10D-00030D353CA1">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 01:46:05 UTC</createdTime>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<engineerTo>
+<item key="B560DC61-34C4-8D83-BC2D-2DBC7FD2B500" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="birth_date" id="6A16C6C2-CAFF-5614-51C1-CC9FDAD92EF1">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 01:46:19 UTC</createdTime>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<engineerTo>
+<item key="B560DC61-34C4-8D83-BC2D-2DBC7FD2B500" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C86CC8B6-9FCB-C144-6C04-8E2059CD3E56" name="ACTORS PK">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 01:45:32 UTC</createdTime>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<engineerTo>
+<item key="B560DC61-34C4-8D83-BC2D-2DBC7FD2B500" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>24ACF125-2E69-1397-CB73-EE8E9F3EDE6F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

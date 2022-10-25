@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8B774221-CBF8-AFB6-83C5-DDE08674F616" name="MEDIA">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>BED352EB-0084-9050-2B62-93A3848712C8</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="media_id" id="0D2ED553-1D78-BFE9-94A1-62B48E67383D">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>0D62A274-F468-8F1F-DF48-2E02541E9040</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="format" id="8DB845BA-A728-ED53-3008-9193E8B9A6D9">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>33489A58-44B8-159D-EDFF-243D91B6959E</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MOVIES_title_id" id="D6298827-6D90-E583-5A14-BC8C4DC6AC52">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>662E8612-FC56-D6E7-0730-D41BE33A7075</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="78FC5C07-37CC-034D-7A39-3DDEC4D2E389" referredColumn="574AF426-B103-E52B-EFFB-AF3BA8893F56"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C1DCC373-B04F-522D-76DE-5DA1C8BC5DF8" name="MEDIA_PK">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>55C8F1AE-11CE-095C-BB28-EE537C5AFEEF</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0D2ED553-1D78-BFE9-94A1-62B48E67383D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4EDAC194-BAA8-B2B8-34D1-32640E93842B" name="MED_ID_PK">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 03:52:50 UTC</createdTime>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0D2ED553-1D78-BFE9-94A1-62B48E67383D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C39A0578-4B1C-67EE-1C35-1638E7B46E1B" name="MEDIA_MOVIES_FK">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>AFC6E3F6-B05B-81C2-A0B6-1DCB27CE75B7</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D6298827-6D90-E583-5A14-BC8C4DC6AC52"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

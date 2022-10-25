@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B2116E1D-E914-217A-7B65-12DF4D422CC9" name="MOVIES">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>3962CEEF-583F-3472-129D-98E9F9CA97AE</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="title_id" id="574AF426-B103-E52B-EFFB-AF3BA8893F56">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>8263D51E-EFFD-F9E3-2261-F4243D0AC22A</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="title" id="12BC29D2-B724-15CC-677E-C347E14720B8">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>8D25E5A7-845E-0E25-3978-429D351CE50E</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="DCC28481-9791-4458-A798-064EAE51F054">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>F2D9616D-2D36-2CEA-3943-07B556CAC7BE</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>400</dataTypeSize>
+<ownDataTypeParameters>400,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rating" id="2FECDC6B-C64D-B3CE-61A2-5A09C2E0B31B">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>46D00854-4196-174C-D441-4D111095ACEB</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="category" id="D8E85CDA-3DDF-8E40-B2A2-FC5491EEA2EB">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>1368B80A-5B0F-603B-9DDE-2DDFBF23C430</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="release_date" id="83039FF4-A4CB-A8A5-4100-0E00E649E039">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>82C735E0-9D32-07AD-3527-70FB24533A5E</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7FE0F39C-F849-2FD7-29EC-F514DD5D7A2B" name="MOVIES_PK">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>11180CD8-B4B2-1BCA-4AF5-1BDE207A3A83</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="574AF426-B103-E52B-EFFB-AF3BA8893F56"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BDED954C-7D93-0F0C-2780-861E33085AD7" name="TIT_ID_PKv1">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 03:52:29 UTC</createdTime>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="574AF426-B103-E52B-EFFB-AF3BA8893F56"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="RATING_ALLOWED" directorySegmentName="seg_0" id="7FD59AC6-E547-A9B6-006A-17C9553827F5">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:07:57 UTC</createdTime>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<rule><![CDATA[rating in ('G','PG','R','PG13');]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CAT_ALLOWED" directorySegmentName="seg_0" id="4880C37F-73B8-14E7-61E4-1B645551A20A">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 03:40:03 UTC</createdTime>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<rule><![CDATA[category in ('DRAMA', 'COMEDY', 'ACTION', 'CHILD', 'SCIFI', 'DOCUMENTRY')]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

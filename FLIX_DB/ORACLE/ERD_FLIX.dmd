@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="ERD_FLIX" id="4D1F656B-7BBE-27C3-13D0-7BDCE016BF62" version="3.5">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-24 18:02:13 UTC</createdTime>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>4D1F656B-7BBE-27C3-13D0-7BDCE016BF62</designId>
+</OSDM_Design>

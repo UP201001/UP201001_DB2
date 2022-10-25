@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6EDC8C50-EC65-0280-3615-8C11E517F86A" name="STAR_BILLINGS">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>9A45C57F-6B58-C79F-77D6-B72D978CA296</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="comments" id="E249588D-78C2-7865-8882-CA67A5028F13">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>96D239CF-8370-3EEC-57AB-4EECB10B133D</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MOVIES_title_id" id="D6EC362F-C2AA-C702-0AC3-4FE21D899BC2">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>941F1DF6-FA41-CE9D-CF90-79F4101FBB51</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2F2B3161-F1DE-DB81-A2DF-086514361AB5" referredColumn="574AF426-B103-E52B-EFFB-AF3BA8893F56"/>
+</associations>
+</Column>
+<Column name="ACTORS_actor_id" id="41A7176D-B227-D472-BAF0-27727695713E">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>90FDC29D-432F-EC9B-6513-736FBD2A8FFA</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EC68965C-F200-AB14-0EC5-5D711328B0C3" referredColumn="158CE773-34D6-9280-004B-8DF04ACDE9CA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B315D779-0039-419F-49C7-AE928114ABA7" name="STAR_BILLINGS_PK">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>6D42955D-8D10-E621-329A-C8A0DB6394A2</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D6EC362F-C2AA-C702-0AC3-4FE21D899BC2"/>
+<colUsage columnID="41A7176D-B227-D472-BAF0-27727695713E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9BB292AD-5F1A-9689-D9A4-A6DA10884E88" name="STAR_BILLINGS_PK">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 03:54:00 UTC</createdTime>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D6EC362F-C2AA-C702-0AC3-4FE21D899BC2"/>
+<colUsage columnID="41A7176D-B227-D472-BAF0-27727695713E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DA72D48A-1B3B-4C6A-1B96-98FA377D3801" name="STAR_BILLINGS_MOVIES_FK">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>D5F7C43A-F4FD-6807-3EF0-2A27A7CD6262</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D6EC362F-C2AA-C702-0AC3-4FE21D899BC2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="20F2E960-3287-3E3A-B1B8-FE163D59F0C6" name="STAR_BILLINGS_ACTORS_FK">
+<createdBy>leolo</createdBy>
+<createdTime>2022-10-25 02:02:38 UTC</createdTime>
+<generatorID>15168307-1DA4-59B5-183A-F20012669EEA</generatorID>
+<ownerDesignName>ERD_FLIX</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="41A7176D-B227-D472-BAF0-27727695713E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
