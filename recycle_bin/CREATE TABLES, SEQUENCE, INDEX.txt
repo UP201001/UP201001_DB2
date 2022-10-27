@@ -1,3 +1,5 @@
+
+--DROP TABLE IF ALREADY EXIST
 DROP TABLE STAR_BILLINGS;
 DROP TABLE ACTORS;
 DROP TABLE RENTAL_HISTORY;
@@ -6,6 +8,8 @@ DROP TABLE MOVIES;
 DROP TABLE CUSTOMERS;
 
 
+
+--CREATE OF TABLES
 CREATE TABLE CUSTOMERS ("CUSTOMER_ID" NUMBER(10),
                         "LAST_NAME" VARCHAR2(25) CONSTRAINT "CUS_LAST_NAME_NN" NOT NULL ENABLE,
                         "FIRST_NAME" VARCHAR2(25) CONSTRAINT "CUS_FIRST_NAME_NN" NOT NULL ENABLE,
@@ -46,11 +50,21 @@ create table "ACTORS" (actor_id NUMBER(10),
                        birth_date DATE CONSTRAINT birth_date_nn NOT NULL ENABLE,
                        CONSTRAINT actors_pk PRIMARY KEY (actor_id) USING INDEX ENABLE);   
 
-create table "STAR_BILLINGS" (actor_id NUMBER(10) CONSTRAINT actor_id_fk REFERENCES actors(actor_id),
-                               title_id NUMBER(10) CONSTRAINT title_id_fk REFERENCES movies(title_id),
+create table "STAR_BILLINGS" (actor_id NUMBER(10) CONSTRAINT actor_id_fk NOT NULL REFERENCES actors(actor_id),
+                               title_id NUMBER(10) CONSTRAINT title_id_fk NOT NULL REFERENCES movies(title_id),
                                comments VARCHAR2(40),
                                CONSTRAINT star_billings_pk PRIMARY KEY (actor_id, title_id) USING INDEX ENABLE);
 
+
+--DESCRIBE TABLES
+DESC CUSTOMERS;
+DESC RENTAL_HISTORY;
+DESC MOVIES;
+DESC MEDIA;
+DESC ACTORS;
+DESC STAR_BILLINGS;
+
+--CREATE SEQUENCES
 CREATE SEQUENCE customers_id_seq
 start with 101
 increment by 1
@@ -71,5 +85,23 @@ start with 1001
 increment by 1
 cache 50;
 
+
+--CREATE INDEX FOR CUSTOMER'S LAST NAME 
 CREATE INDEX customers_last_name_i
 ON CUSTOMERS(last_name);
+
+--CREATE VIEW TITLE_UNAVAIL
+CREATE VIEW TITLE_UNAVAIL AS
+SELECT m.title, f.media_id, r.rental_date, r.return_date
+FROM movies m, media f, rental_history r
+WHERE m.title_id = f.title_id AND f.media_id = r.media_id
+                              AND r.return_date IS NULL
+ORDER BY RENTAL_DATE
+WITH READ ONLY;
+
+
+--CREATE SYNONYM TU
+CREATE SYNONYM TU FOR TITLE_UNAVAIL;
+
+--select * FROM USER_SYS_PRIVS; 
+

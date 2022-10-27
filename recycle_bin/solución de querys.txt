@@ -1,0 +1,21 @@
+--Nota de renta
+select (first_name || ' ' || last_name) as "Customer's Name", 
+        title, format, rental_date, NVL(return_date, rental_date+45) as return_date
+from customers natural join rental_history 
+               natural join media 
+               natural join movies
+order by "Customer's Name", rental_date;
+
+--Titulo y cantidad en stock de todos los formatos ( no importa si está rentada )
+with aux as (select title_id, count(*) "Stock (All formats)"
+           from media
+           group by title_id)
+select p.title, aux."Stock (All formats)"
+from movies p, aux
+where p.title_id = aux.title_id;
+
+--Mostrar la cantidad disponible por formato para cada película identificada por su id y hacer la sumatoria de cantidades para cada película y para todas las películas
+select title_id, NVL(format,'Total stock:') format, count(*) qty
+from media
+GROUP BY ROLLUP(title_id, format)
+order by title_id;
