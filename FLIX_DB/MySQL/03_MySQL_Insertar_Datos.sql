@@ -1,11 +1,10 @@
---Insertar Actors
+
 insert into ACTORS (stage_name, first_name, last_name, birth_date) values ('Emma Stone', 'Emily', 'Stone',date('1998-11-06'));
 insert into ACTORS (stage_name, first_name, last_name, birth_date) values ('Will Smith', 'Willard', 'Smith',date('1968-09-25'));
 insert into ACTORS (stage_name, first_name, last_name, birth_date) values ('Tom Cruise', 'Thomas', 'Cruise',date('1962-07-03'));
 insert into ACTORS (stage_name, first_name, last_name, birth_date) values ('Britt Robertson', 'Brittany', 'Robertson',date('1990-04-18'));
 insert into ACTORS (stage_name, first_name, last_name, birth_date) values ('Tim Burton', 'Timothy', 'Burton',date('1958-08-25'));
 
---Insertar Customers
 insert into CUSTOMERS (last_name, first_name, home_phone, address, city, state, email, cell_phone) values ('Leaf', 'Tarra', '713-277-1053', '0002 Warrior Way', 'Houston', 'TX', 'tleaf0@bloglines.com', '214-411-2911');
 insert into CUSTOMERS (last_name, first_name, home_phone, address, city, state, email, cell_phone) values ('Pherps', 'Lizzie', '361-248-4397', '78564 Messerschmidt Point', 'Corpus Christi', 'TX', 'lpherps1@furl.net', '781-936-6894');
 insert into CUSTOMERS (last_name, first_name, home_phone, address, city, state, email, cell_phone) values ('Cleverley', 'Aloisia', '516-255-6737', '542 Hintze Way', 'Port Washington', 'NY', 'acleverley2@freewebs.com', '701-900-6790');
@@ -27,7 +26,6 @@ insert into CUSTOMERS (last_name, first_name, home_phone, address, city, state, 
 insert into CUSTOMERS (last_name, first_name, home_phone, address, city, state, email, cell_phone) values ('Inott', 'Ingelbert', '570-951-9836', '72 Banding Alley', 'Wilkes Barre', 'PA', 'iinotti@51.la', '714-738-3689');
 insert into CUSTOMERS (last_name, first_name, home_phone, address, city, state, email, cell_phone) values ('Aiers', 'Brigida', '405-413-8648', '9132 Knutson Terrace', 'Oklahoma City', 'OK', 'baiersj@arstechnica.com', '706-737-6396');
 
---insertar Movies
 insert into MOVIES (title, description, rating, category, release_date) values ('The Shawshank Redemption', 'Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.', 'R', 'DRAMA',date('1994-10-14'));
 insert into MOVIES (title, description, rating, category, release_date) values ('The Godfather', 'The aging patriarch of an organized crime dynasty in postwar New York City transfers control of his clandestine empire to his reluctant youngest son.', 'R', 'DRAMA', date('1972-03-24'));
 insert into MOVIES (title, description, rating, category, release_date) values ('The Dark Knight', 'When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.', 'PG13', 'ACTION',date('2008-07-18'));
@@ -39,8 +37,6 @@ insert into MOVIES (title, description, rating, category, release_date) values (
 insert into MOVIES (title, description, rating, category, release_date) values ('The Lord of the Rings: The Fellowship of the Ring', 'A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.', 'PG13', 'DRAMA',date('2001-12-19'));
 insert into MOVIES (title, description, rating, category, release_date) values ('The Good, the Bad and the Ugly', 'A bounty hunting scam joins two men in an uneasy alliance against a third in a race to find a fortune in gold buried in a remote cemetery.', 'R', 'ACTION',date('1966-12-29'));
 
---insert MEDIA
---BLU stands for "blu-ray"
 insert into MEDIA (format, title_id) values ('VHS', 8);
 insert into MEDIA (format, title_id) values ('BLU', 4);
 insert into MEDIA (format, title_id) values ('BLU', 9);
@@ -62,7 +58,6 @@ insert into MEDIA (format, title_id) values ('BLU', 1);
 insert into MEDIA (format, title_id) values ('DVD', 1);
 insert into MEDIA (format, title_id) values ('BLU', 2);
 
---INSERT RENTAL_HISTORY
 insert into RENTAL_HISTORY (media_id, rental_date, customer_id, return_date) values (95, DEFAULT, 116, null);
 insert into RENTAL_HISTORY (media_id, rental_date, customer_id, return_date) values (96, date('2022-10-11'), 120, null);
 insert into RENTAL_HISTORY (media_id, rental_date, customer_id, return_date) values (107, DEFAULT, 113, null);
@@ -85,7 +80,6 @@ insert into RENTAL_HISTORY (media_id, rental_date, customer_id, return_date) val
 insert into RENTAL_HISTORY (media_id, rental_date, customer_id, return_date) values (98, DEFAULT, 101, null);
 
 
---insert STAR_BILLINGS
 insert into STAR_BILLINGS (actor_id, title_id, comments) values (1001, 3, 'Thriller Lead');
 insert into STAR_BILLINGS (actor_id, title_id, comments) values (1002, 8, 'Extra');
 insert into STAR_BILLINGS (actor_id, title_id, comments) values (1003, 10, 'Star');

@@ -1,4 +1,4 @@
-drop user 'flix'@'localhost';
+drop user if exists 'flix'@'localhost';
 
 CREATE DATABASE IF NOT EXISTS oracle_flix;
 
