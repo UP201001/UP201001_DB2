@@ -1,0 +1,32 @@
+/*
+set SERVEROUTPUT on;
+
+DECLARE
+    numero NUMBER := 9;
+    cadena VARCHAR2(100);
+BEGIN
+    FOR i IN 1..10 LOOP
+        cadena := numero || ' x ' || i || ' = ' || ( numero * i );
+        dbms_output.put_line(cadena);
+    END LOOP;
+END;
+/
+select * from employees where department_id = 60;
+*/
+DECLARE
+    strng VARCHAR2(400);
+    j     NUMBER := 1;
+    total VARCHAR2(100);
+    CURSOR c_employees IS SELECT * FROM employees 
+                          WHERE department_id = 60;
+BEGIN
+    FOR c_emp IN c_employees LOOP
+        strng := 'Hola ' || c_emp.last_name || ' eres el N° ' || j;
+        j := j + 1;
+        dbms_output.put_line(strng);
+    END LOOP;
+    dbms_output.put_line('__________________________');
+    total := '                Total =' || ( j - 1 );
+    dbms_output.put_line(total);
+END;  
+        
