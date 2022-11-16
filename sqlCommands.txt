@@ -29,4 +29,28 @@ BEGIN
     total := '                Total =' || ( j - 1 );
     dbms_output.put_line(total);
 END;  
-        
+
+--------------------------------------------------------------------
+/*Función que regresa el rango de edad*/
+
+CREATE OR REPLACE FUNCTION ageRange(p_date in date)
+    return varchar2
+is
+    v_sysdate date;
+    v_age INTEGER;
+    str varchar2(50);
+begin
+    select sysdate into v_sysdate from dual; --Se asigna a v_sysdate el sysdate por medio del select
+    v_age := trunc((v_sysdate - p_date)/365); --Se realiza el cálculo de la edad
+    
+    str :=
+        case
+            when v_age between 0 and 30 then '1ra Edad'
+            when v_age between 31 and 59 then '2da Edad'
+            when v_age between 60 and 90 then '3ra Edad'
+            else 'Horas Extra'
+        end;
+    return str;
+end;
+/
+select ageRange(to_date('17 dec 1000', 'dd mon yyyy')) from dual;        
