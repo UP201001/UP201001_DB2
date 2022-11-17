@@ -53,4 +53,24 @@ begin
     return str;
 end;
 /
-select ageRange(to_date('17 dec 1000', 'dd mon yyyy')) from dual;        
+select ageRange(to_date('17 dec 1000', 'dd mon yyyy')) from dual;
+
+---------------------------------------------------------------------
+SET SERVEROUTPUT ON;
+DECLARE
+    CURSOR cursor_id_skipped IS
+        SELECT department_id from departments;
+    v_last_id departments.department_id%TYPE := 0;
+    v_current_id departments.department_id%TYPE;
+BEGIN
+    dbms_output.put_line('Id`s skipped');
+    FOR v_dept IN cursor_id_skipped LOOP
+        v_current_id := v_dept.department_id;
+            WHILE v_current_id != v_last_id LOOP
+                IF v_current_id != (v_last_id + 10)  THEN
+                    DBMS_OUTPUT.PUT_LINE(v_last_id + 10);
+                END IF;
+                v_last_id := v_last_id + 10;
+            END LOOP;
+    END LOOP;
+END;
