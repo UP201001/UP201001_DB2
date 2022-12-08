@@ -1,0 +1,27 @@
+set SERVEROUTPUT on;
+DECLARE
+    CURSOR cur_reg is
+        select * from regions;
+        
+    CURSOR cur_countries (p_reg number) is
+        select * from countries
+        where region_id = p_reg;
+    CURSOR cur_loc (p_country VARCHAR2) is
+        select * from locations
+        where country_id = p_country;
+        
+begin
+    for r_regions in cur_reg loop
+        DBMS_OUTPUT.PUT_LINE(upper('Region: ' || r_regions.region_name));
+        --DBMS_OUTPUT.PUT_LINE(upper('countries from the region: '));
+        FOR r_countries in cur_countries (r_regions.region_id) loop
+            DBMS_OUTPUT.PUT_LINE(upper(r_countries.country_name));
+            DBMS_OUTPUT.PUT_LINE(upper(' cities from the region: '));
+            FOR r_locations in cur_loc (r_countries.country_id) loop
+                DBMS_OUTPUT.PUT_LINE(upper('  -' || r_locations.state_province));
+            end loop;
+            DBMS_OUTPUT.PUT_LINE('');
+        end loop;
+        DBMS_OUTPUT.PUT_LINE('');
+    end loop;
+end;
